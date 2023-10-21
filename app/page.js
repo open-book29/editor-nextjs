@@ -1,6 +1,7 @@
 "use client"
 import { Editor } from '@monaco-editor/react'
 import { useEffect, useState } from 'react'
+import Header from './components/Header'
 
 const files = {
   "script.js": {
@@ -74,6 +75,7 @@ export default function Home() {
 
   return (
     <main className="">
+      <Header />
       <div className="">
         {/* <button onClick={() => setFileName("index.html")} type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-md text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Switch to index.html</button>
         <button onClick={() => setFileName("script.js")} type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-md text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Switch to script.js</button> */}
